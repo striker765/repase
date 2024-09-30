@@ -1,0 +1,614 @@
+id;JOB;JOB STREAM;WORKSTATION;ferramenta;1º RESPONSÁVEL;2º RESPONSÁVEL;3º RESPONSÁVEL;HORÁRIO DE ACIONAMENTO;CRITICIDADE ;DESCRIÇÃO
+;DBA:CLEANUPLOGS AMBIENTE CRM;.;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Clean-up BR-Tools Logs
+;SAP_COLLECTOR_FOR_JOBSTATISTIC (AMBIENTE ECC);SAP_COLLECTOR_JO;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Collector for Background Job Run-time Statistics
+;EXPORTA_BASE_PCA_DIA_03:30:00 (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Recontabilização de NF geradas pelo Solução de Vendas 
+;BASETEF 01:00:00 (AMBIENTE ECC)  BASETEF_010000;BASETEF_010000;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;EXPORTA_BASE_PCA_D-1 (AMBIENTE ECC) - EXPORTA_BASE_PCA_D_1;EXPORTA_BASE_PCA;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Recontabilização de NF geradas pelo Solução de Vendas 
+;TEF1300;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;FAST_ext_spc_10;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_WCS_D_P_DATA_PURGE_001;FST_DATA_PURGE;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Execução do processo de expurgo de arquivos no servidor do WCS
+;FAST_WCS_D_P_GERA_DADOS_COREMET_WCS_001;FST_COREMET_WCS;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Média;Processamento do job do datastage para extrair informações do WCS e geração do arquivo com estatísticas para ser enviado ao Coremetrics.
+;FAST_GAN_D_P_TRANSF_LST_CASAM_001;FST_FILE_LC;Hoapgan001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Fazer o FTP do arquivo de extrato de lista de casamento (gerado pelo GAN) para o Admin.
+;MDM_EXEC_GAN_RESP;SERV_GAN; HOAQMDM001FST;;  ;Rafael Esteves;;Imediatamente;Alta;Gerar arquivo de SERVICE ELIGIBILTY aprovados para o GAN
+;SAP_CCMS_MONI_BATCH_DP (AMBIENTE ECC);SAP_CCMS_MONI;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Start Method in System Monitoring Area
+;CAIXA_QUINTA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_FILE_JOB29_001;FST_FILE_JOB29;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job para Ordem de Compra
+;BC_UPDT_ORA_STAT (AMBIENTE CRM);.;R3CRP;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Oracle 10g dictionary statistic
+;BASESAP_MANHA (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;ENVIO_MAIL_CONTROLE_SLA (AMBIENTE CRM);ENVIO_EMAIL_SLA;;; ; ;Rafael Moreira;Notificar Via E-mail;Média;Envio de email de controle do SLA
+;SAP_REORG_JOBSTATISTIC (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Jobs statistic reorganization
+;SAP_COLLECTOR_FOR_NONE_R3_STAT (AMBIENTE CRM);SAP_COL_NONESTAT;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Non-R/3 Statistic Collector
+;SAP_REORG_XMILOG (AMBIENTE CRM);SAP_XMILOG;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;XMI interface Reorganization
+;DBA:CHECKDB* (AMBIENTE CRM);.;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Database Check
+;FAST_FILE_JOB106_001;FST_FILE_JOB106;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job106 suporteDigital_env
+;DBA_CHECKDB_QUINTA (AMBIENTE CRM);DBA_CHECK_QUI;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Database Check
+;BASETEF 06:30:00 (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;SAP_CHECK_ACTIVE_JOBS (AMBIENTE CRM);SAP_ACTIVE_JOBS;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Check active jobs
+;FAST_WCS_D_U_CARGA_SERV_001;FST_SERVICE(FST_SERVU);Hoaqwcs002fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Processamento do dataload tool no WCS para realizar a carga do arquivo de serviços gerado pelo datastage.
+;EU_PUT - FAST SHOP - ECC;EU_PUT;;;Basis (FirstGuardian);Basis (FirstGuardian);Basis (FirstGuardian);Horário Comercial;Média;Update Object Lists After Transport
+;FAST_WCS_D_U_CARGA_SERV_SKU_001;FST_SERVICE(FST_SERVU);Hoaqwcs002fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Processamento do dataload tool no WCS para realizar a carga do arquivo de SKU de serviços gerado pelo datastage.
+;DBA_UPDATESTATS_TERCA (AMBIENTE CRM);DBA_UPDATE_TER;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Database statistics
+;FAST_WCS_D_D_CARGA_PROD_ATRIB_001;FST_PRODQ;hoadwcs005fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de atributos  de produtos gerado pelo datastage.
+;EXPORTA_BASE_PCA_DIA_08:00:00 (AMBIENTE ECC) - EXPORTA_BASE_PCA_DIA_080000;EXPORTA_080000;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Recontabilização de NF geradas pelo Solução de Vendas 
+;SAP_REORG_SPOOL (AMBIENTE CRM);SAP_REORG_SPOOL;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Spool reorganization
+;FAST_WCS_D_U_CARGA_PROD_ATRIB_001;FST_PRODUCT (FST_PRODU);Hoaqwcs002fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Processamento do dataload tool no WCS para realizar a carga do arquivo de atributos  de produtos gerado pelo datastage.
+;SLEEP_XXX_MINUTOS (XXX = QUANTIDADE DE MINUTOS DEFINIDO NO SLEEP);"GAN_BI_START
+ GAN_ROT_START
+ GAN_ROT_GERAISO";HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;SLEEP JOBS
+;CAIXAB_06:30:00 (AMBIENTE ECC) - CAIXAB_063000;CAIXAB_063000;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_WCS_D_P_CARGA_PROD_SKU_001;FST_PROD;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de SKU de produtos  gerado pelo datastage.
+;FAST_WCS_D_P_DELTA_PROPAGATION;"FAST_PROPAGATION
+ FAST_PROPAGA
+FST_DELTA (com submit)";SA1LPWCS002FST;;Carlos Renato Domingos da Silva;Guilherme;Rafael Moreira;Imediatamente;Alta;"Este jobs executa os processos de indexação e propagação DELTA. O Job FAST_WCS_D_P_StagingPropMonitor
+ executa o monitoramento deste job."
+;FAST_WCS_D_P_CARGA_SERV_SKU_001;FST_SERV;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de SKU de serviços gerado pelo datastage.
+;BASESAP_D-1(AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;FAST_GAN_D_P_TRANSF_SERVICE_INCR_ADMIN;FST_INC;Hoapgan901fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Transferência do arquivo de carga de serviços do GAN para o Datastage.
+;TRANSFER_MDM_SEND_MDM2GAN_OFICIAL_QA ou TRANSFER_MDM_SEND_MDM2GAN_OFICIAL_PRD;SERV_GAN;HOAQMDM001FST_1;;  ;Rafael Esteves;.;Imediatamente;Média;Transportar arquivo entre ambiente - de MDM para GAN
+;FAST_WCS_D_U_STAGING_PROP_001;FST_STG_U;Hoaqwcs002fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Execução do processo de propagação de dados do WCS Staging para o  WCS Live.
+;FAST_ext_spc_6;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;BASETEF 05:15:00 (AMBIENTE ECC) - BASETEF_051500;BASETEF_051500;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;BTCH_RSORAVSH (AMBIENTE ECC);BTCH_RSORAVSH;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Collect statistic from I/O subsistem
+;FAST_WCS_D_P_CARGA_SERV_PRECO_FULL_001;FST_FULL_SERVICE;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço de serviço gerado pelo datastage.
+;CAIXAB_06:30:00 (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_FILE_JOB107_001;FST_FILE_JOB107;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job107 suporteDigital_ret
+;FAST_WCS_D_U_CARGA_SERV_PRECO_001;FST_SERVICE(FST_SERVU);Hoaqwcs002fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço de serviço gerado pelo datastage.
+;TEF1700;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;CAIXAB_SEGUNDA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;DBA:CLEANUPLOGS* (AMBIENTE ECC) - DBA_CLEANUPLOGS_100000_6007;DBA_CLEANUPLOGS;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Clean-up BR-Tools Logs
+;BDL_TASK_PROCESSOR (AMBIENTE CRM);BDL_TASK_PROCESS;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Start/Collect Data for EWA
+;TEF0900;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;EXEC_STATA_TWS;FSTSNOPBI;HOWPSOP001FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Média;Executa scripts Stata.
+;CAIXA_05:30:00 (AMBIENTE ECC) - CAIXA_053000;CAIXA_053000;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_ext_spc_2;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;DBA_CHECKDB_TERCA (AMBIENTE CRM);DBA_CHECK_TER;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Database Check
+;RM_ARQUIVO_ANTIGO_SAP;EXPORT_PROD_SAP;172.30.40.36;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Remover arquivo do servidor do SAP
+;RM_BI_PRODUTO_CSV;HIERARQUIA_BI;172.30.40.174;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Média;Remover o arquivo do servidor do MDM
+;CARGA_CLIENTE_GAN (AMBIENTE CRM);.;R3CRP;; ; ;Rafael Moreira;Notificar Via E-mail;Média;Interface de carga de clientes no SAP CRM (GAN -> SAP CRM)
+;TRANSFER_MDM_SEND_SAP2MDM_OFICIAL_QA ou TRANSFER_MDM_SEND_SAP2MDM_OFICIAL_PRD;EXPORT_PROD_SAP;HOAQMDM001FST_1;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Transportar arquivo entre ambiente - de SAP ECC para MDM
+;FAST_SAP_D_P_IMPORTCLIENTES_001;ETL01;R3CRP;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Importação de dados de clientes via batch (Variant Normal)
+;CAIXAB_02:30:00 (AMBIENTE ECC) - CAIXAB_023000;CAIXAB_023000;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_SAP_D_P_EXPORTCLIENTESETL_1;EXPORT_CLIENT;hoapcrm901fst;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Alta;Exportação para o ETL de dados de clientes atualizados no dia no SAP CRM
+;ZCORR0004(Extração de Dados Mestres do SAP ERP para o Cognos BI e Cognos TM1);ZCORR0004;HOAPECC001FST;;Wladmir Bastos da Silva Filho;Controladoria  -  Fabricio Ribeiro da Silva;;Horário Comercial;Média;"Esse job executa o programa ZCORR0004 e gera 5 arquivos .csv que serão gravados em um diretório do SAP ERP, pre-definido. Os arquivos são:
+centro_de_custo_data.csv
+classe_custo_data.csv
+hierarquia_cc_data.csv
+hieraquia_clac_data.csv
+ordem_interna_data.csv
+onde a data varia conforme a data de execução do job (AAAA/MM/DD)"
+;FAST_WCS_D_P_CARGA_SERV_PRECO_001;FST_SERV;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Baixa;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço de serviço gerado pelo datastage.
+;FAST_WCS_D_P_PRE_PROCESS_001;FST_STG;SA1LPWCS002FST;;  ;  ;Rafael Moreira;Imediatamente;Alta;Execução do processo de preparação dos dados para propagação do WCS Staging para o  WCS Live.
+;FAST_WCS_D_P_DELETE_ORDER_001;FST_DEL_ORDER;hoapwcs015fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Execução da procedure para deletar os pedidos expirados.
+;FAST_ETL_D_CARGA_COREMETRICS_ADMIN_001;FST_COREMET_NET;HOADBIS001FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Processamento do job do datastage para extrair informações do Admin/.NET e geração do arquivo com estatísticas para ser enviado ao Coremetrics.
+;ZMMR_GERA_ARQUIVO_GAN (AMBIENTE ECC);ZMMR_GERA_GAN;;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Collect statistic from I/O subsistem
+;FAST_ext_spc_11;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Wladmir D. Bastos;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_GAN_D_U_TRANSF_SERVICE_WCS_001;FST_FILE_SERV;Hoaqgan001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Transferência do arquivo de carga de serviços do GAN para o Datastage.
+;CHOWN_ARQ_SAP_RESP;EXPORT_PROD_SAP;172.30.40.202;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Colocar o PIM como owner
+;ZMMRR0003;EXPORT_PROD_SAP;R3R3Q;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Esse job executa o programa ZMMRR0003 efetuando a leitura dos arquivos contidos no diretório /interfaces/MDM/In e após o processamento grava o arquivo de retorno no diretório /interfaces/MDM/Out e o arquivo de log no diretório /interfaces/MDM/In/BKP.
+;CAIXAB_QUINTA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_WCS_D_P_BUILD_INDEX_001;FST_STG;SA1LPWCS002FST;;  ;  ;Rafael Moreira;Imediatamente;Alta;Execução do processo de criação de indices para propagação de dados do WCS Staging para o  WCS Live.
+;ZCORR0005(Extração de Dados Transacionais Reais do SAP ERP para o Cognos BI e Cognos TM1);ZCORR0005;HOAPECC001FST;;Wladmir Bastos da Silva Filho;Controladoria  -  Fabricio Ribeiro da Silva;;Horário Comercial;Média;"Esse job executa o programa ZCORR0005 e gera 1 arquivo .csv que será gravados em um diretório do SAP ERP, pre-definido. O arquivos gerado será:
+realizado_data.csv
+onde a data varia conforme a data de execução do job (AAAA/MM/DD)"
+;FAST_basetrocas;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Wladmir D. Bastos;Rafael Moreira;Imediatamente;Média;Processamento de Informações para o BI
+;FAST_WCS_D_P_CARGA_SERV_001;FST_SERV;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de serviços gerado pelo datastage.
+;DBA_CHECKDB_SEXTA (AMBIENTE CRM);DBA_CHECK_SEX;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Database Check
+;SAP_COLLECTOR_FOR_JOBSTATISTIC (AMBIENTE CRM);SAP_COLLECTOR_JB;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Collector for Background Job Run-time Statistics
+;FAST_WCS_D_P_CARGA_ASSOC_PROD_SERV_001;FST_SERV;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Baixa;Processamento do dataload tool no WCS para realizar a carga do arquivo de associação de produtos e serviços gerado pelo datastage.
+;SAP_REORG_BATCHINPUT (AMBIENTE CRM);SAP_BATCHINPUT;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Batch-Input reorganization
+;FAST_ext_spc_5;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Wladmir D. Bastos;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;CAIXAB_02:30:00 (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;DBA_UPDATESTATS_SEXTA (AMBIENTE CRM);DBA_UPDATE_SEX;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Database statistics
+;FAST_FILE_JOB39_001;FST_FILE_JOB39;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job39_Mercador_ED Redecard
+;FAST_GAN_D_D_TRANSF_PRODUCT_WCS_001;FST_FILE_PROD;hoadgan001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Transferência do arquivo de carga de produtos do GAN para o Datastage.
+;CAIXA_01:30:00 (AMBIENTE ECC) - CAIXA_013000;CAIXA_013000;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_FILE_JOB31_001;FST_FILE_JOB31;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job31_IN_EDI x Mercador
+;FAST_ext_spc_1;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;SAP_REORG_ABAPDUMPS (AMBIENTE ECC);SAP_ABAPDUMPS;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Abap Dumps reorganization
+;FAST_WCS_D_P_STAGINGPROPMONITOR;FAST_Staging;SA1LPWCS002FST.fastshop.com.br;;  ;  ;Rafael Moreira;Notificar Via E-mail;Baixa;Este job monitora as logs de propagacao do stagingprop
+;CHMOD_ARQ_GAN;SERV_GAN;172.30.40.202;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Média;Colocar permissão no arquivo para usuário do TWS
+;RM_GAN_ELEGIBILIDADE_RESP_CSV_DESTINO;SERV_GAN;172.30.40.202;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Média;Remover o arquivo de elegibilidade no MDM
+;PRINCIPAL_NEW (AMBIENTE ECC) / PRINCIPAL_NEW_INICIO_DIA;PRINCIPAL_NEW;  R3R3P;;Rafael Sousa Moreira;Rafael Sousa Moreira;;Notificar somente via chamado;Baixa;Geração de Boletos para Clientes Corporativos
+;FAST_WCS_D_P_CARGA_SERV_SKU_FULL_001;FST_FULL_SERVICE;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de SKU de serviços gerado pelo datastage.
+;BASESAP_DIA_03:30:00(AMBIENTE ECC) - BASESAP_DIA_0330;BASESAP_DIA_0330;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;CAIXA_01:30:00 (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;TEF0400;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;TEF1400;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;FAST_ext_spc_9;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;RM_GAN_ELEGIBILIDADE_CSV;SERV_GAN;172.30.40.202;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Média;Remover o arquivo do servidor do MDM
+;FAST_SCRIPT_REF /FAST_SCRIPT_REF1 /FAST_SCRIPT_REF2;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;SAP_COLLECTOR_FOR_NONE_R3_STAT (AMBIENTE ECC);SAP_COLLECTOR;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Non-R/3 Statistic Collector
+;DBA_UPDATESTATS_DOMINGO (AMBIENTE CRM);DBA_UPDATE_DOM;.;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Database statistics
+;SAP_SPOOL_CONSISTENCY_CHECK (AMBIENTE ECC);SAP_SPOOL_CHECK;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Spool Consistency Check
+;DBA:NEXTEXTENT* (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Check Next Extent of Database tables
+;TRANSFER_MDM_SEND_MDM2SAP_OFICIAL_QA ou TRANSFER_MDM_SEND_MDM2SAP_OFICIAL_PRD;EXPORT_PROD_SAP;HOAQMDM001FST_1;;Wladmir Bastos;Rafael Esteves;.;Horário Comercial;Média;Transportar arquivo entre ambiente - de MDM para SAP ECC
+;/BDL/TASK_PROCESSOR (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Start/Collect Data for EWA
+;SAP_REORG_JOBSTATISTIC (AMBIENTE CRM);.;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Jobs statistic reorganization
+;FST_FILE_JOBARQLOG;FST_FILE_JOBLOG;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Arquiva os logs de envio/recepção de arquivos
+;FAST_GAN_D_D_TRANSF_ESTOQ_FULL_WCS_001;FST_FILE_ESTQ;hoadgan001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Transferência do arquivo de carga de estoque full do GAN para o Datastage.
+;FAST_WCS_D_P_CARGA_ASS_PR_SERV_FULL_001;FST_FULL_SERVICE;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de associação de produtos e serviços gerado pelo datastage.
+;RM_BI_ELIGIBILIDADE_CSV;HIERARQUIA_BI;172.30.40.174;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Média;Remover o arquivo do servidor do MDM
+;CAIXA_TERCA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;AJUSTE_PERMISSIONAMENTO_ORACLE_RH_GAN;AJUSTE_PERMISS;Hoapmsf902fst;;Wladmir Bastos;Wladmir D. Bastos;Rafael Moreira;Horário Comercial;Alta;Este script faz CHMOD 666 nos arquivos que esta no diretório appexport/tac/trigger e depois move-os para o diretório appexport/tac
+;TEF1900;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;SAP_COLLECTOR_FOR_PERFMONITOR (AMBIENTE CRM);SAP_COL_PERF_MON;R3CRP;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Collector for Performance Monitor
+;FAST_WCS_D_U_IHS_SYNC_002;FST_IHS_SYNC;Hoaqwcs002fst;;  ;  ;Rafael Moreira;Horário Comercial;Média;Execução do processo de propagação de dados IHS do Staging para o IHS Live.
+;FAST_GAN_D_P_TRANSF_SERVICE_WCS_001;FST_FILE_SERVR;hoapgan002fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Transferência do arquivo de carga de serviços do GAN para o Datastage.
+;FAST_WCS_D_P_CARGA_SERV_FULL_001 ;FST_FULL_SERVICE;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de serviços gerado pelo datastage.
+;FAST_baseestoque2_1;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Wladmir D. Bastos;Rafael Moreira;Imediatamente;Média;Processamento de Informações para o BI
+;FAST_FILE_JOB111_001;FST_FILE_JOB111;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job111_NotFis GAN x EDI_Transp
+;SAP_REORG_JOBS (AMBIENTE CRM);SAP_REORG_JOBS;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Jobs logs reorganization
+;ZFII_INT_INB_CADASTRO_GANXSAP (AMBIENTE ECC);ZFII_INT_GANXSAP;.;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Collect statistic from I/O subsistem
+;TRANSFER_MDM_SEND_GAN2MDM_OFICIAL_QA ou TRANSFER_MDM_SEND_GAN2MDM_OFICIAL_PRD;SERV_GAN;HOAQMDM001FST_1;;Eduardo de Oliveira Saragiotto;Rafael Esteves;.;Horário Comercial;Baixa;Transportar arquivo entre ambiente - de GAN para MDM
+;MDM_EXEC_MDMFILE;SERV_GAN;HOAQGAN001FST;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Importar arquivo de SERVICE ELIGIBILTY do GAN para o MDM
+;FAST_baseestoque;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Processamento de Informações para o BI
+;MONITORACAO_GAN_SEV2;"MONI_GAN_SEG_SAB
+MONI_GAN_SEG_SEX
+MONI_GAN_DOM";HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Wladmir Bastos;Notificar Via E-mail;Baixa;Monitoraçao dos processos do GAN
+;FAST_GAN_D_P_TRANSF_PRODUCT_WCS_001;FST_FILEP;hoapgan002fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Transferência do arquivo de carga de produtos do GAN para o Datastage.
+;FAST_WCS_D_D_CARGA_PROD_PRECO_MIN_001;FST_PRODQ;hoadwcs005fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço mínimo de produtos gerado pelo datastage.
+;SAP_REORG_ABAPDUMPS (AMBIENTE CRM);SAP_ABAPDUMPS;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Abap Dumps reorganization
+;DBA:CLEANUPLOGS* (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Clean-up BR-Tools Logs
+;FAST_basetms;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Média;Processamento de Informações para o BI
+;FAST_WCS_D_P_CARGA_SERV_ATRIB_001;FST_SERV;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Baixa;Processamento do dataload tool no WCS para realizar a carga do arquivo de atributos  de serviços gerado pelo datastage.
+;BASETEF 01:00:00 (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;BASESAP_D-1(AMBIENTE ECC) - BASESAP_D_1;BASESAP_D_1;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;CAIXAB_SEXTA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;CAIXA_DOMINGO (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_FILE_JOB30_001;FST_FILE_JOB30;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job SR_EDI x Mercador
+;FAST_FILE_JOB37_001;FST_FILE_JOB37;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job37_Mercador_EF Redecard
+;DBA_CHECKDB_SABADO (AMBIENTE CRM);DBA_CHECK_SAB;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Database Check
+;FAST_WCS_D_D_CARGA_SERV_PRECO_002;FST_SERVQ;hoadwcs004fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço de serviço gerado pelo datastage.
+;tac_backup;tac_backup;HOAPMSF902FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Compacta os arquivos de integração relacionados a TAC
+;EXPORTA_BASE_PCA_DIA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Recontabilização de NF geradas pelo Solução de Vendas 
+;CHOWN_ARQ_GAN_MDM;SERV_GAN;172.30.40.68;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Média;Colocar o usuário do TWS como owner
+;FAST_ABAP_D_P_EXTRAI_FF_CHAMADOS_001;FST_ABAP_BI;hoapcrm001fst;;Marcelo Coelho;Rafael Esteves;Rafael Moreira;Horário Comercial;Média;"Programa Abap responsável pela geração 
+dos arquivos de Chamados"
+;FAST_basefichatec;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Média;Processamento de Informações para o BI
+;CAIXA_SABADO (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_ABAP_D_P_EXTRAI_FF_CLIENTES_001;FST_ABAP_BI_CLI;hoapcrm001fst;;Marcelo Coelho;Rafael Esteves;Rafael Moreira;Horário Comercial;Média;"Programa Abap responsável pela geração 
+do arquivo de cadastro de clientes"
+;/BDL/TASK_PROCESSOR (AMBIENTE ECC) - BDL_TASK_PROCESSOR;BDL_TASK_PROCE;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Start/Collect Data for EWA
+;MDM_EXP_SERV_GAN;SERV_GAN;" 
+HOAQMDM001FST";;  ;Rafael Esteves;.;Imediatamente;Média;Gerar arquivo de SERVICE ELIGIBILTY aprovados para o GAN
+;EXPORTA_BASE_PCA_DIA_03:30:00 (AMBIENTE ECC) - EXPORTA_BASE_PCA_DIA_033000;EXPORTA_033000;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Recontabilização de NF geradas pelo Solução de Vendas 
+;EU_REORG - FAST SHOP - ECC;EU_REORG;.;;Basis (FirstGuardian);Basis (FirstGuardian);Basis (FirstGuardian);Horário Comercial;Média;Refresh Navigation Indexes and Object Lists
+;FAST_WCS_D_P_CARGA_PROD_ATRIB_001;FST_PROD;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de atributos  de produtos gerado pelo datastage.
+;FAST_ESB_PUT_HIERARQUIA_ESB_WCS_001 (SERVIDOR HOAPESB001FST);FST_MDM_HIERARQU;HOAPESB001FST;;"Alexandre Batista
+
+";Rafael Esteves;TBD;Horário Comercial;Média;Processamento do job para fazer PUT numa fila MQ via Script shell para verificar a existências de mensagens para o WCS
+;FAST_baseinvrot;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Média;Processamento de Informações para o BI
+;FAST_WCS_D_U_CARGA_SERV_ATRIB_001;FST_SERVICE(FST_SERVU);Hoaqwcs002fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Processamento do dataload tool no WCS para realizar a carga do arquivo de atributos  de serviços gerado pelo datastage.
+;SAP_REORG_BATCHINPUT (AMBIENTE ECC);SAP_BATCHINPUT;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Batch-Input reorganization
+;MONITORACAO_GAN;MONIT_GAN;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Monitoraçao dos processos do GAN
+;FAST_basevendas;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Média;Processamento de Informações para o BI
+;TEF1000;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;CAIXAB_QUARTA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_WCS_D_U_INDEX_PROP_001;FST_STG_U;Hoaqwcs002fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Execução do processo de propagação indices do WCS Staging para o  WCS Live.
+;DESBLOQUEIO_SENHA / DESBLOQUEIO_SENHA_1;DESBLOQ_SENHA;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Desbloqueio de senha
+;SAP_CCMS_MONI_BATCH_DP (AMBIENTE CRM);SAP_CCMS_MONIBAT;R3CRP;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Start Method in System Monitoring Area
+;CAIXAB (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;tac_afastamentos;tac_afast;HOAPMSF902FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;"Exporta dados de afastamentos do sistema de RH (RM Totvs / Forponto) para o GAN
+
+- tac_afastamentos.sql"
+;DBA:UPDATESTATS* (AMBIENTE CRM);.;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Database statistics
+;FAST_GAN_D_D_TRANSF_SERVICE_WCS_001;FST_FILE_SERV;hoadgan001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Transferência do arquivo de carga de serviços do GAN para o Datastage.
+;EXPORTA_BASE_PCA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_WCS_D_P_INDEX_PROP_001;FST_STG;SA1LPWCS002FST;;  ;  ;Rafael Moreira;Imediatamente;Alta;Execução do processo de propagação indices do WCS Staging para o  WCS Live.
+;EXPORTA_BASE_PCA_DIA_08:00:00 (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_WCS_D_U_CARGA_ASSOC_PROD_SERV_001;FST_SERVICE(FST_SERVU);Hoaqwcs002fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Processamento do dataload tool no WCS para realizar a carga do arquivo de associação de produtos e serviços gerado pelo datastage.
+;TEF1500;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;RM_SAP_PRODUTO_RESP_CSV;EXPORT_PROD_SAP;172.30.40.36;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Remover o arquivo de resposta do servidor do SAP
+;BASETEF 04:00:00 (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;FAST_WCS_D_D_CARGA_SERV_PRECO_001;FST_SERVQ;hoadwcs005fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço de serviço gerado pelo datastage.
+;DBA_CHECKDB_DOMINGO (AMBIENTE CRM);DBA_CHECK_DOM;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Database Check
+;CAIXA_DOMINGOB (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;SAP_REORG_ORPHANED_TEMSE_FILES (AMBIENTE CRM);SAP_REORG_TEMSE;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Filesystem/TEMSE consistency check
+;CAIXA_SEXTA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_FILE_JOB113_001;FST_FILE_JOB113;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job113_OcorrenTransp
+;RM_GAN_ELEGIBILIDADE_RESP_CSV;SERV_GAN;172.30.40.202;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Média;Remover o arquivo do servidor do GAN
+;FAST_WCS_D_D_CARGA_SERV_SKU_001;FST_SERVQ;hoadwcs005fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de SKU de serviços gerado pelo datastage.
+;TEF1200;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;TEF1100;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;FAST_WCS_D_P_CARGA_SERV_ATRIB_FULL_001;FST_FULL_SERVICE;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de atributos  de serviços gerado pelo datastage.
+;TEF1600;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;tac_cadcargo;tac_cadcargo;HOAPMSF902FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;"Exporta cadastro de cargos do sistema de RH (RM Totvs) para o GAN
+
+- tac_cadcargo.sql"
+;FAST_WCS_D_P_FULL_PROPAGATION/FAST_WCS_D_P_FULL_PROPAGATION_1;FAST_PROPAGATION;SA1LPWCS002FST;;Carlos Renato Domingos da Silva;Guilherme Maia ;Rafael Moreira;Imediatamente;Alta;"Este jobs executa os processos de indexação e propagação FULL. O Job FAST_WCS_D_P_StagingPropMonitor
+ executa o monitoramento deste job."
+;FAST_WCS_D_U_INVETORY_ORDER_001;FST_STG_U;Hoaqwcs001fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Execução da procedure para atualizar o estoque dos produtos em pré venda.
+;FAST_ext_spc_3;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_WCS_D_P_CARGA_SERV_PRECO_003;FST_STG;SA1LPWCS002FST;;  ;  ;Rafael Moreira;Imediatamente;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço de serviço gerado pelo datastage.
+;FAST_WCS_D_U_GERA_DADOS_COREMET_WCS_001;FST_COREMET_WCS;Hoaqwcs002fst;;  ;  ;Rafael Moreira;Horário Comercial;Média;Processamento do job do datastage para extrair informações do WCS e geração do arquivo com estatísticas para ser enviado ao Coremetrics.
+;CAIXA_SEGUNDA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;DBA_UPDATESTATS_SEGUNDA (AMBIENTE CRM);DBA_UPDATE_SEG;.;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Database statistics
+;SUBMIT_ETL01;ETL01;hoaptws001fst;;Scheduler do TWS;Scheduler do TWS;Scheduler do TWS;Imediatamente;Alta;SUBMIT SCHEDULE ETL01
+;FST_SPED_CONTABIL;SPED_CONTABIL;hoapmsf901fst (HOAPMSF001FST  e HOAPMSF002FST) - Cluster;;  ;  ;Rafael Moreira;Horário Comercial;Média;Job tem como função converter arquivos do SPED contabil vindos do Mastersaf Unix to Dos e realizar o ZIP dos mesmos para formato *.gz (zip)
+;DBA_CHECKDB_QUARTA (AMBIENTE CRM);DBA_CHECK_QUA;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Database Check
+;FAST_WCS_D_P_INVETORY_ORDER_001;FST_STG;hoapwcs013fst;;  ;  ;Rafael Moreira;Imediatamente;Alta;Execução da procedure para atualizar o estoque dos produtos em pré venda.
+;FAST_WCS_D_D_CARGA_SERV_ATRIB_001;FST_SERVQ;hoadwcs005fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de atributos  de serviços gerado pelo datastage.
+;FAST_ext_spc_7;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Processamento de Informações para o BI
+;DBA:UPDATESTATS* (AMBIENTE ECC) - DBA_UPDATESTATS_020000_0001;DBA_UPDATESTATS;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Update Database statistics
+;FAST_WCS_D_U_DELETE_ORDER_001;FST_DEL_ORDER;Hoaqwcs001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Execução da procedure para deletar os pedidos expirados.
+;FAST_WCS_D_P_CARGA_PROD_001;FST_FILEP;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de produtos gerado pelo datastage.
+;MDM_EXP_BI_PROD;HIERARQUIA_BI;HOAQMDM001FST;;  ;Rafael Esteves;.;Imediatamente;Média;Gerar arquivo de Hierarquia de Produtos aprovados para o BI
+;MDM_EXEC_SAP_RESP;EXPORT_PROD_SAP;HOAQMDM001FST;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Gerar arquivo de Produtos aprovados para o SAP ECC
+;MONITORACAO_GAN_SEV1;MONI_GAN_SEG_SAB;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Monitoraçao dos processos do GAN
+;TRANSFER_MDM_SEND_MDM2BI_ELEGIB_OFICIAL;HIERARQUIA_BI;HOAQMDM001FST_1;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Transportar arquivo entre ambiente - de MDM para BI
+;FAST_GAN_D_P_TRANSF_ESTOQ_FULL_WCS_001;FST_FILE_ESTQ;hoapgan001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Transferência do arquivo de carga de estoque full do GAN para o Datastage.
+;EU_REORG - FAST SHOP - CRM;EU_REORG;CRM;;Basis (FirstGuardian);Basis (FirstGuardian);Basis (FirstGuardian);Notificar somente via chamado;Média;Refresh Navigation Indexes and Object Lists
+;DBA_CHECKDB_SEGUNDA (AMBIENTE CRM);DBA_CHECK_SEG;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Database Check
+;CAIXA_05:30:00 (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;SAP_REORG_ORPHANED_JOBLOGS (AMBIENTE ECC);SAP_REORG_ORPH;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Orphaned Job logs reorganization
+;/BDL/TASK_PROCESSOR (AMBIENTE CRM);.;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Start/Collect Data for EWA
+;FAST_baseruad;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Média;Processamento de Informações para o BI
+;SAP_REORG_JOBS (AMBIENTE ECC);SAP_REORG_JOBS;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Jobs logs reorganization
+;BASESAP (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;SAP_REORG_PRIPARAMS (AMBIENTE CRM);.;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Reorganization of print parameters
+;MDM_EXP_PROD_SAP;EXPORT_PROD_SAP;HOAQMDM001FST;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Gerar arquivo de Produtos aprovados para o SAP ECC
+;EXPORTA_BASE_PCA_D-1 (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Imediatamente;Alta;Recontabilização de NF geradas pelo Solução de Vendas 
+;CAIXAB_TERCA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;TEF1800;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;ZENVIO_DE_EMAIL (AMBIENTE CRM);ZENVIO_EMAIL;spfsux06_CRP_00;; ; ;Rafael Moreira;Notificar Via E-mail;Média;Envio de email
+;SAP_REORG_PRIPARAMS (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Reorganization of print parameters
+;FAST_FILE_JOB68_001;FST_FILE_JOB68;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job68_NotaFiscal EDI
+;PFCG_TIME_DEPENDENCY (AMBIENTE ECC);PFCG_TIME;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Update PFCG Time dependency roles assigniment
+;CHMOD_ARQ_SAP;EXPORT_PROD_SAP;HOAQECC002FST;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;chmod 777 nos arquivos gerados pelo sap
+;SAP_REORG_SPOOL (AMBIENTE ECC);SAP_REORG_JOBS.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Spool reorganization
+;FAST_WCS_D_D_CARGA_SERV_001;FST_SERVQ;hoadwcs005fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de serviços gerado pelo datastage.
+;FAST_WCS_D_D_CARGA_ASSOC_PROD_SERV_001;FST_SERVQ;hoadwcs005fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de associação de produtos e serviços gerado pelo datastage.
+;BASETEF (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;SAP_REORG_ORPHANED_JOBLOGS (AMBIENTE CRM);SAP_REORG_ORPH;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Orphaned Job logs reorganization
+;CAIXAB_SABADO (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;BASETEF 08:00:00 (AMBIENTE ECC) - BASETEF_080000;BASETEF_080000;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;FAST_ext_spc_4;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;MDM_EXP_BI_ELEGIB;HIERARQUIA_BI;HOAQMDM001FST;;  ;Rafael Esteves;.;Imediatamente;Média;Gerar arquivo de Elegibilidade aprovadas para o BI
+;BASESAP_DIA_08:00:00(AMBIENTE ECC) - BASESAP_DIA_0800;BASESAP_DIA_0800;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;FAST_GAN_D_U_TRANSF_ESTOQ_FULL_WCS_001;FST_FILE_ESTQ;Hoaqgan001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Transferência do arquivo de carga de estoque full do GAN para o Datastage.
+;TEF0100;.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;DBA_CLEANUPLOGS_SABADO (AMBIENTE CRM);DBA_CLEANUPLOGS;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Clean-up BR-Tools Logs
+;FAST_WCS_D_P_STAGING_PROP_001; FST_STG;SA1LPWCS002FST;;  ;  ;Rafael Moreira;Imediatamente;Alta;Execução do processo de propagação de dados do WCS Staging para o  WCS Live.
+;EU_PUT - FAST SHOP - CRM;EU_PUT;CRM;;Basis (FirstGuardian);Basis (FirstGuardian);Basis (FirstGuardian);Notificar somente via chamado;Média;Update Object Lists After Transport
+;SLEEP_3600;ETL01;hoaptws001fst;;Scheduler do TWS;Scheduler do TWS;Scheduler do TWS;Imediatamente;Alta;CONTADOR DE 1 HORA PARA JOB CICLICO
+;CAIXA_QUARTA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;FAST_WCS_D_U_CARGA_PROD_PRECO_MIN_001;FST_PRODUCT (FST_PRODU);Hoaqwcs002fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço mínimo de produtos gerado pelo datastage.
+;FAST_WCS_D_P_CARGA_PROD_PRECO_MIN_001;FST_PROD;SA1LPWCS002FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço mínimo de produtos gerado pelo datastage.
+;SAP_REORG_JOBS_2 (AMBIENTE CRM);SAP_REORG_JOBS;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Jobs logs reorganization
+;FAST_GAN_D_P_TRANSF_SERVICE_FULL_ADMIN;FST_ADM_SERV_FUL;Hoapgan901fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Média;Transferência do arquivo de carga de serviços do GAN para o Datastage.
+;DBA_UPDATESTATS_SABADO (AMBIENTE CRM);DBA_UPDATE_SAB;.;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Database statistics
+;SAP_REORG_ORPHANED_TEMSE_FILES (AMBIENTE ECC);SAP_TEMSE_FILES;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Filesystem/TEMSE consistency check
+;FAST_SAP_D_P_IMPORTCLIENTES_002;"ETL02
+ETL02_SEQ1 - apos termino do scheduler ETL02
+ETL02_SEQ2 - apos termino do scheduler ETL_SEQ1";hoapcrm901fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Importação de dados de clientes via batch (paralelo)
+;SAP_SPOOL_CONSISTENCY_CHECK (AMBIENTE CRM);SAP_SPOOL_CHECK;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Spool Consistency Check
+;FAST_FILE_JOB114_001;FST_FILE_JOB114;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job114_DocCobTransp
+;RM_SAP_PRODUTO_CSV;EXPORT_PROD_SAP;172.30.40.202;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Remover arquivo do servidor do MDM
+;FAST_WCS_D_P_IHS_SYNC_XXX( ONDE XXX = 001/002/007/008);FST_IHS_SYNC;SA1LPWCS002FST;;Carlos Renato Domingos da Silva;  ;Rafael Moreira;Imediatamente;Alta;Execução do processo de propagação de dados IHS do Staging para o IHS Live.
+;FAST_baseestoque2_2;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Média;Processamento de Informações para o BI
+;TRANSFER_MDM_SEND_MDM2BI_PROD_OFICIAL_QA e TRANSFER_MDM_SEND_MDM2BI_PROD_OFICIAL_PR;HIERARQUIA_BI;HOAQMDM001FST_1;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Transportar arquivo entre ambiente - de MDM para BI
+;FAST_WCS_D_U_IHS_SYNC_001;FST_IHS_SYNC;Hoaqwcs002fst;;  ;  ;Rafael Moreira;Horário Comercial;Média;Execução do processo de propagação de dados IHS do Staging para o IHS Live.
+;FAST_FILE_JOB38_001;FST_FILE_JOB38;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job38_Mercador_EV Redecard
+;ENVIO_CHAMADOS_GAN (AMBIENTE CRM);ENVIO_GAN;R3CRP;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Interface de envio de chamados para o GAN (SAP CRM -> GAN)
+;CAIXA (AMBIENTE ECC);.;  R3R3P;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Recontabilização de NF geradas pelo Solução de Vendas 
+;BASESAP_DIA_03:30:00(AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;DBA:CHECKDB* (AMBIENTE ECC) - DBA_CHECKDB_060000_0001;DBA_CHECKDB;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Database Check
+;CONFIG_PRODUTO (AMBIENTE CRM);CONFIG_PRODUTO;-;; ; ;Rafael Moreira;Notificar Via E-mail;Média;Interface de cadastro de materiais (SAP 5.0 -> SAP CRM via Middleware)
+;DBA_UPDATESTATS_QUARTA (AMBIENTE CRM);DBA_UPDATE_QUA;.;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Database statistics
+;FAST_WCS_D_U_PRE_PROCESS_001;FST_STG_U;Hoaqwcs002fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Execução do processo de preparação dos dados para propagação do WCS Staging para o  WCS Live.
+;SAP_REORG_XMILOG (AMBIENTE ECC);SAP_REORG_XMILOG;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;XMI interface Reorganization
+;BASESAP_DIA_08:00:00(AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar Via E-mail;Média;Base de Dados Cartoes 
+;FAST_WCS_D_U_DATA_PURGE_001;FST_DATA_PURGE;Hoaqwcs002fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Execução do processo de expurgo de arquivos no servidor do WCS
+;FAST_GAN_D_P_TRANSF_SERVICE_WCS_FULL_001;FST_FULL_SERVICE;hoapgan901fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Transferência do arquivo de carga de serviços do GAN para o Datastage.
+;DBA:CHECKDB* (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Database Check
+;FAST_WCS_D_P_CARGA_SERV_PRECO_002;FST_SERV;hoapwcs003fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Processamento do dataload tool no WCS para realizar a carga do arquivo de preço de serviço gerado pelo datastage.
+;FAST_ext_spc_8;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Processamento de Informações para o BI
+;FAST_GAN_D_U_TRANSF_PRODUCT_WCS_001;FST_FILE_PROD;Hoaqgan001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Transferência do arquivo de carga de produtos do GAN para o Datastage.
+;FAST_WCS_D_U_BUILD_INDEX_001;FST_STG_U;Hoaqwcs002fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Média;Execução do processo de criação de indices para propagação de dados do WCS Staging para o  WCS Live.
+;FAST_GAN_D_P_TRANSF_SERVICE_REMOVE_FULL;FST_FULL_REM_SER;hoapgan001fst;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;Transferência do arquivo de carga de serviços do GAN para o Datastage.
+;FAST_FILE_JOB40_001;FST_FILE_JOB40;HOWPEDI902FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento do job Job40_DispVenda x Mecador 
+;DBA:UPDATESTATS* (AMBIENTE ECC);.;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Update Database statistics
+;FAST_gerencial;GAN_BI_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Média;Processamento de Informações para o BI
+;SAP_COLLECTOR_FOR_PERFMONITOR (AMBIENTE ECC);SAP_PERFMONITOR;;;Basis (FirstGuardian);  ;Marcel Mena;Notificar somente via chamado;Média;Collector for Performance Monitor
+;FAST_WCS_D_D_DATA_PURGE_001;FST_DATA_PURGE;hoadwcs005fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Execução do processo de expurgo de arquivos no servidor do WCS
+;"FAST_ESB_PUT_HIERARQUIA_ESB_WCS_001 (SERVIDOR 
+HOAQESB001FST)";FST_MDM_HIERARQU;HOAQESB001FST;;"Alexandre Batista
+
+";Rafael Esteves;TBD;Horário Comercial;Média;Processamento do job para fazer PUT numa fila MQ via Script shell para verificar a existências de mensagens para o WCS
+;FAST_WCS_D_D_IHS_SYNC_001;FST_IHS_SYNC;hoadwcs005fst;;  ;  ;Rafael Moreira;Enviar e-mail e acionar em horário comercial.;Alta;Execução do processo de propagação de dados IHS do Staging para o IHS Live.
+;CHMOD_ARQ_SAP_GAN;EXPORT_PROD_SAP;172.30.40.36;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Média;Colocar permissão no arquivo
+;DBA_UPDATESTATS_QUINTA (AMBIENTE CRM);DBA_UPDATE_QUI;.;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Database statistics
+;FAST_SCRIPT_REF1;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_cpmail;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_corrigec;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_relinvent;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_revetbe_x(1,2,3,4,5);GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_geraiso;GAN_ROT_GERAISO;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_baselogist;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_extrvend;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotlanc3;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotdir;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Processamento de Informações para o BI
+;FAST_rotlanc;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_supply;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_dia1;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_dia2;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_cpgan;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotdircp;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotmrp;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_cron1;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_atualizasap;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_atualizabasepca;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotdircp2;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Processamento de Informações para o BI
+;FAST_rotdircp2_1;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Baixa;Processamento de Informações para o BI
+;FAST_basecontcron;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotdircp3;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_sappcareproc;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotdircp4;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotdircp41;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotdircp42;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Alta;Processamento de Informações para o BI
+;FAST_cron3;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotdircp5;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rotdircp6;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Processamento de Informações para o BI
+;FAST_cron4;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Processamento de Informações para o BI
+;FAST_cpganbi;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_cron5;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_cron6;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_atualizabasectb;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_gernfdeb;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_extracaocec;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Processamento de Informações para o BI
+;FAST_atualizabasetef;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_gerencial1;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_confhex_res;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_cron2;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;FAST_rel_gmr;GAN_ROT_START;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Processamento de Informações para o BI
+;TWS_CHECK_PLAN (FAST SHOP);TWS_CHECK_PLAN;HOAPTWS001FST;;SME Suporte TWS;SME Suporte TWS;;Imediatamente;Alta;Este job é responsável por identificar se a carga do plano do dia seguinte apresentará problemas de duplicidade de informações ou problemas com o horário de geração e carregamento dos jobs no plano.
+;FAST_script_index;GAN_INDEX;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Baixa;Script que marca o inicio da Indexação dos Arquivos do GAN
+;FAST_bloquear;GAN_INDEX;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Derrubar todos os Putty que estiverem ativos
+;FAST_indexar_LOTE1 (1 AO 14);GAN_INDEX;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Indexação dos Arquivos do GAN
+;FAST_indexar_LOTE2 (1 AO 8);GAN_INDEX;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Indexação dos Arquivos do GAN
+;FAST_indexar_LOTE3 (1 AO 8);GAN_INDEX;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Indexação dos Arquivos do GAN
+;FAST_desbloquear;GAN_INDEX;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Desbloqueio do Sistema GAN
+;FAST_extratolc_2011;FAST_extratolc;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_extratolc_2012;FAST_extratolc;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_extratolc_2013;FAST_extratolc;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_extratolc_2014;FAST_extratolc;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_logfcped;FAST_move;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rotdir3;FAST_rotdir3;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rotdiraa;FAST_rotdiraa;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_tlojmov;FAST_move_tloj;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_tlojmov1;FAST_move_tloj;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_tlojmov2;FAST_move_tloj;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rotdir1;FAST_rotdir1;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_SEGURANCA;FAST_SEGURANCA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_SEGURANCA1;FAST_SEGURANCA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_mkt;FAST_move_diario;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_extrvend_aa;FAST_move_diario;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_faginst_aa;FAST_move_diario;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_bkpcoletor;FAST_bkpcoletor;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rpreco;FAST_rpreco;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rot00hor;FAST_rot00hor;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rot00hor1;FAST_rot00hor;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Baixa;Rotinas Internas do Sistema GAN
+;FAST_zerapedloj;FAST_zerapedloj;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_limpa_xhb;FAST_limpa_xhb;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rotdir2;FAST_rotdir2;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_rot_aa;FAST_move_rot;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_crmbase_aa;FAST_move_crm;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_hexa_aa;FAST_move_hexa;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_lista_aa;FAST_move_lista;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_ttefacu;FAST_move_ttef;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_limpa_altreg;FAST_limpa_altre;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_SEGURANCA2;FAST_SEGURANCA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rotmail;FAST_rotmail;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rota;FAST_rota;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_lstcasammail;FAST_lstcasa;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_atualizabasesap1;FAST_atualizabas;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_edinfimp;FAST_edinfimp;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_gerencialdia;FAST_gerenciald;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_cadfuncrm;FAST_cadfuncrm;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_geracadas;FAST_geracadas;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_EDIIMP_XXXX (XXXX = 07AM/09AM/12PM/08PM);FAST_ediimp;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Baixa;Rotinas Internas do Sistema GAN
+;FAST_verfatcx;FAST_verfatcx;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rot11hor;FAST_rot11hor;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_cpgan2;FAST_cpgan2;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_revisornfe;FAST_revisornfe;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rot18hor;FAST_rot18hor;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rotjusttime;FAST_ROTJUST_DIA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_tcf_aa;FAST_move_tcf_aa;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_log_cli;FAST_move_log_cl;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_ftablib;FAST_move_ftabl;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rotlanc2;FAST_rotlanc2;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_limpaftabcel;FAST_limpaftabce;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_move_terralibaa;FAST_move_terral;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_deslig_user;FAST_deslig_user;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rot2330hor;FAST_rot2330hor;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_garantia;FAST_garantia;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_p_hora;FAST_p_hora;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rothora;FAST_rothora;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rothora1 ;FAST_rothora1 ;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Baixa;Rotinas Internas do Sistema GAN
+;FAST_cornfpend1;FAST_CORNFPE_SEM;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_gpack1;FAST_gpack1;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_gpack3;FAST_gpack3;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_gpack4;FAST_gpack4;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_cor_wcs;FAST_cor_wcs;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_isrunning;FAST_isrunning;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_newdellx;FAST_newdellx;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_rothoracp;FAST_rothoracp;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_revlibpr;FAST_revlibpr;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_libhexacron;FAST_libhexacron;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_revetbl;FAST_revetbl;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_permissao;FAST_permissao;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_estatistica_consulta_estoque;FAST_estatistica;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_cron7;FAST_cron7;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_qgconlim;FAST_qgconlim;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_atualizasap;FAST_atualizasap;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_atualizabasepca;FAST_atualizapca;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_atualizabasetef;FAST_atualizatef;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_atualizabasesap;FAST_atualizab;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_MANUT_IMPR / FAST_MANUT_IMPR_1;FAST_manut_impr;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_geranfinc;FAST_GERANF_CICL;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_restecn;FAST_restecn;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar somente por e-mail;Baixa;Rotinas Internas do Sistema GAN
+;FAST_LIMPEZA_DIARIA_GAN;LIMPEZA_DIARIA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;Shell script que efetua a limpeza de alguns diretórios apagando os arquivos temporários de acordo com regra específica para cada diretório.
+;ABEND_ANALYSIS - FAST SHOP;ABEND_ANALYSIS;HOAPTWS001FST;;SME PRODUCAO;SME PRODUCAO;SME PRODUCAO;Horário Comercial;Média;ABEND_ANALYSIS
+;FAST_SH_EXTRACAO_PRODUTO_M1 - Servidor HOAQMDM001FST;FST_M1;HOAQMDM001FST;;  ;Wladmir Bastos da Silva Filho;Rafael Moreira;Notificar Via E-mail;Baixa;Carregar os dados de produtos M1 cadastrados no MDM
+;FAST_SH_EXTRACAO_PRODUTO_M1 - servidor HOAPMDM001FST;FST_M1_P;HOAPMDM901FST;;  ;Wladmir Bastos da Silva Filho;Rafael Moreira;Horário Comercial;Baixa;Carregar os dados de produtos M1 cadastrados no MDM
+;CONSULTA_ADMITIDOS;CONSUL_ADMITIDOS;hoapmsf902fst(172.30.40.61);;  ;  ;Marcel Mena;Horário Comercial;Média;Este job executa o script /appexport/ad/scripts/consultaadmitidos.sh diariamente, às 22:00. Este script, ao ser executado pelo TWS, aciona a consulta  /appexport/ad/scripts/consultaadmitidos.sql, que faz uma query no banco de dados do sistema RM. Esta query gera um output chamado  /appexport/ad/admitidos/admitidos.csv que será exportado posteriormente pelo TWS File Transfer para a máquina do AD.
+;TRANSFER_ADMITIDOS;CONSUL_ADMITIDOS;hoapmsf902fst(172.30.40.61);;  ;  ;Marcel Mena;Horário Comercial;Média;Este job executa transporta o arquivo \\hoapmsf902fst(172.30.40.61)\appexport\ad\admitidos\admitidos.csv diariamente, às 22:00, para \\HOWPADS002FST\c$\scripts\RM\admitidos\admitidos.csv.
+;CRIA_ADMITIDOS_AD;CONSUL_ADMITIDOS;howpads002fst (172.30.40.21);;  ;  ;Marcel Mena;Horário Comercial;Média;Este job executa o arquivo \\HOWPADS002FST\c$\scripts\C:\Scripts\admitidos.cmd após o recebimento do arquivo admitidos.csv via filetransfer em  \\HOWPADS002FST\c$\scripts\RM\admitidos\admitidos.csv.
+;CONSULTA_DEMITIDOS;CONSUL_DEMITIDOS;hoapmsf902fst(172.30.40.61);;  ;  ;Marcel Mena;Horário Comercial;Média;Este job executa o script /appexport/ad/scripts/consultademitidos.sh diariamente, às 22:00. Este script, ao ser executado pelo TWS, aciona a consulta  /appexport/ad/scripts/consultademitidos.sql, que faz uma query no banco de dados do sistema RM. Esta query gera um output chamado  /appexport/ad/demitidos/demitidos.csv que será exportado posteriormente pelo TWS File Transfer para a máquina do AD.
+;TRANSFER_DEMITIDOS;CONSUL_DEMITIDOS;hoapmsf902fst(172.30.40.61);;  ;  ;Marcel Mena;Horário Comercial;Média;Este job transporta o arquivo \\hoapmsf902fst(172.30.40.61)\appexport\ad\demitidos\demitidos.csv diariamente, às 22:00, para \\HOWPADS002FST\c$\scripts\RM\demitidos\demitidos.csv.
+;REMOVE_DEMITIDOS_AD;CONSUL_DEMITIDOS;howpads002fst (172.30.40.21);;  ;  ;Marcel Mena;Horário Comercial;Média;Este job executa o arquivo \\HOWPADS002FST\c$\scripts\demitidos.cmd após o recebimento do arquivo demitidos.csv via filetransfer em  \\HOWPADS002FST\c$\scripts\RM\demitidos\demitidos.csv.
+;CONSULTA_ATIVOS;RENOMEIA_ARQUIVO;hoapmsf902fst(172.30.40.61);;  ;  ;Marcel Mena;Horário Comercial;Baixa;Este job executa o script /appexport/maximo/scripts/consultaativos.sh diariamente, às 22:00. Este script, ao ser executado pelo TWS, aciona a consulta  /appexport/maximo/scripts/consultaativos.sql, que faz uma query no banco de dados do sistema RM. Esta query gera um output chamado  /appexport/maximo/ativos/ativos.csv que será exportado posteriormente pelo TWS File Transfer para a máquina do AD.
+;RENOMEIA_ATIVOS;RENOMEIA_ARQUIVO;hoapmsf902fst(172.30.40.61);;  ;  ;Marcel Mena;Horário Comercial;Média;Este job executa o script /appexport/ad/scripts/renomeiaativos.sh  diariamente, às 22:00. Este script, ao ser executado pelo TWS, copia o arquivo  /appexport/maximo/ativos/ativos.csv para /appexport/maximo/ativos/old/ativos_<data>.csv para armazenar o histórico de geração de csvs após a execução das consultas.
+;RENOMEIA_ADMITIDOS;RENOMEIA_ARQUIVO;hoapmsf902fst(172.30.40.61);;  ;  ;Marcel Mena;Horário Comercial;Média;Este job executa o script /appexport/ad/scripts/renomeiaadmitidos.sh diariamente, às 22:00. Este script, ao ser executado pelo TWS, renomeia o arquivo  /appexport/ad/admitidos/admitidos.csv para /appexport/maximo/admitidos/old/admitidos_<data>.csv para armazenar o histórico de geração de csvs após a execução das consultas.
+;RENOMEIA_DEMITIDOS;RENOMEIA_ARQUIVO;hoapmsf902fst(172.30.40.61);;  ;  ;Marcel Mena;Horário Comercial;Média;Este job executa o script /appexport/ad/scripts/renomeiademitidos.sh diariamente, às 22:00. Este script, ao ser executado pelo TWS, renomeia o arquivo  /appexport/ad/demitidos/demitidos.csv para /appexport/maximo/demitidos/old/demitidos_<data>.csv para armazenar o histórico de geração de csvs após a execução das consultas.
+;TWS_MONITORA_JOBS_ALTO_TEMPO - FAST SHOP;MONITOR_EXEC_JOB;HOAPTWS001FST;;SME PRODUCAO;SME PRODUCAO;SME PRODUCAO;Horário Comercial;Baixa;MONITORACAO DE JOBS PROATIVA
+;FAST_MDM_DELETE_OLD_VERSIONS;FAST_MDM_DELETE;172.30.40.202(HOAPMDM001FST);;Wladmir Bastos;Rafael Esteves;;Notificar Via E-mail;Média;Realizar a limpeza das versões antigas
+;FAST_MDM_DELETE_HISTORY_COLLAB;FAST_MDM_DEL_MES;172.30.40.202(HOAPMDM001FST);;Wladmir Bastos;Rafael Esteves;;Notificar Via E-mail;Média;Realizar a limpeza do historico area de colaboracão
+;FAST_FILE_JOB71_001;FST_FILE_JOB71;HOWPEDI902FST;;Wladmir Bastos;Rafael Esteves;TDB;Notificar somente via chamado;Média;SAP Bradesco REM x Mercador JOB71
+;FAST_FILE_JOB72_001;FST_FILE_JOB72;HOWPEDI902FST;;Wladmir Bastos;Rafael Esteves;TDB;Notificar somente via chamado;Média;Retorno SAP x Bradesco JOB72
+;FST_FILE_JOB75_001;FST_FILE_JOB75_001;HOWPEDI902FST;;Wladmir Bastos;Rafael Esteves;;Notificar somente via chamado;Baixa;SAP BRADESCO REM x Mercador
+;FST_FILE_JOB76_001;FST_FILE_JOB76_001;HOWPEDI902FST;;Wladmir Bastos;Rafael Esteves;;Notificar somente via chamado;Baixa;SAP TRIBUTO RET x Mercador
+;FAST_ETL_M1_ENVIA_ARQUIVO_XML_BITSYS;FST_BIT;HOWPSQL903FST;;Wladmir Bastos da Silva Filho;Rafael Esteves;BitSys;Horário Comercial;Baixa;Enviar arquivo xml para BITSYS
+;FAST_BUSCA_RETORNO_NFE;BUSCA_RET_NFE;HOAPECC001FST;;"Horário comercial
+fila: I-GBS-BR-SS_SAP_MM-FSH (Priscilla Aparecida)";.;Rafael Moreira;Horário Comercial;Média;Esse JOB será responsável por buscar o retorno das NFEs no webservice da Neogrid. 
+;FAST_SAP_D_P_EXPORTCLIENTESETL_1 (AMBIENTE CRM);EXPORT_CLIENT;hoapcrm901fst;; ; ;Rafael Moreira;Notificar somente via chamado;Alta;Exportação para o ETL de dados de clientes atualizados no dia no SAP CRM
+;COPIA_BI_GAN / COPIA_BI_GAN_1 / COPIA_BI_GAN_2/COPIA_BI_GAN_3/COPIA_BI_GAN_4;COPIA_ARQ_SAMBA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Copia de arquivos DBF do GAN em pasta com compartilhamento SAMBA
+;limpa_bi_gan;COPIA_ARQ_SAMBA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Limpeza de pasta com compartilhamento SAMBA
+;FAST_LOG_PED_GOLDEN;FST_GOLD;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Baixa;.
+;SEND_SITEMAP;FST_SEND_SITEMAP;SA1LPWCS002FST;;  ;  ;Rafael Moreira;Notificar Via E-mail;Baixa;.
+;MONITORA_PEDIDO;MONITORA_PEDIDO;hoapgan002fst ou hoapgan001fst;;"Alexandre Batista
+";.;;Horário Comercial;Baixa;O Job tem a finalidade de monitorar a quantidade de pedidos na fila MQ
+;MONITOR20;MONITOR20;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Notificar Via E-mail;Média;Job que monitora ambiente para identificar arquivos com nomes de comandos do AIX.
+;DB_CLEAN_STG;DB_CLEAN;hoapwcs003fst;;  ;  ;Rafael Moreira;Imediatamente;Alta;Chama shellscripts que executam diversas instâncias do job DB Clean do WCS para limpar registros de cada uma das tabelas acordadas com o cliente em Produção Staging e Live.
+;DB_CLEAN_PROD_1;DB_CLEAN;hoapwcs003fst;;  ;  ;Rafael Moreira;Imediatamente;Alta;Chama shellscripts que executam diversas instâncias do job DB Clean do WCS para limpar registros de cada uma das tabelas acordadas com o cliente em Produção Staging e Live.
+;DB_CLEAN_PROD_2;DB_CLEAN;hoapwcs003fst;;  ;  ;Rafael Moreira;Imediatamente;Alta;Chama shellscripts que executam diversas instâncias do job DB Clean do WCS para limpar registros de cada uma das tabelas acordadas com o cliente em Produção Staging e Live.
+;DB_CLEAN_PROD_3;DB_CLEAN;hoapwcs003fst;;  ;  ;Rafael Moreira;Imediatamente;Alta;Chama shellscripts que executam diversas instâncias do job DB Clean do WCS para limpar registros de cada uma das tabelas acordadas com o cliente em Produção Staging e Live.
+;MONITOR_POSA;MONITOR_POSA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Horário Comercial;Alta;monitoração posa para envio de email INCOMM
+;TEST_ABEND_PHONE_PRESENTATION;.;.;;  ; ;.;Imediatamente;Baixa;teste
+;EU_REORG (AMBIENTE CRM);EU_REORG;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Refresh Navigation Indexes and Object Lists
+;EU_PUT (AMBIENTE CRM);EU_PUT;;; ; ;Rafael Moreira;Notificar somente via chamado;Média;Update Object Lists After Transport
+;SEND_CHAORDICXML;SEND_CHAORDICXML;HOAP012FST;;  ;Rafael Esteves;  ;Imediatamente;Alta;Geração de arquivo XML contendo informação de produtos a ser enviado à Chaordic
+;START_COMMAND_PROPAGATION_UNSTRUCTURED;START_COMMAND;SA1LPWCS002FST;;Carlos Renato Domingos da Silva;Carlos Renato Domingos da Silva;Rafael Moreira;Imediatamente;Alta;Job responsavel para indexacao e propagacao das imagens relacionadas aos produtos. As imagens sao tratadas como attachments, e o solr indexa esses attachments possibilitando a visualizacao das imagens dos produtos no site
+;FAST_MONITOR_MEDIA_MOVEL;FAST_MONIT_MEDIA;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Salva a media movel do inicio do dia
+;FAST_MONITOR_MEDIA_ALERTA;FAST_MONIT_MEDIA;HOAPGAN001FST;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Alerta de variacao de media movel
+;TWS_RELATORIOS_JOBS_CRITICOS_FAST_HTML;TWS_REL_CRIT_JOB;HOAPTWS002FST;;Suporte Scheduler IBM;Suporte Scheduler IBM;;Horário Comercial;Baixa;Esse job é responsavel por ENVIAR REPORT DOS JOBS DO COGNOS VIA EMAIL
+;bi_exporta_tabelas_dia;BI_TAB_DIA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;bi_lancamentos_dia;BI_TAB_DIA;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;;Notificar Via E-mail;Baixa;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;ZCORR0009_CONTAS_RAZAO;ZCORR0009;  R3R3P;;Basis (FirstGuardian);Rafael Esteves;;Imediatamente;Média;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;ZCORR0009_LANC_CONTABEIS;ZCORR0009;  R3R3P;;Basis (FirstGuardian);Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;ZCORR0009_SALDO_BALANCO;ZCORR0009;  R3R3P;;Basis (FirstGuardian);Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;ZCORR0009_ESTR_BALANCO;ZCORR0009;  R3R3P;;Basis (FirstGuardian);Rafael Esteves;;Imediatamente;Média;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;ZCORR0009_SET_HIERARQUIA;ZCORR0009;  R3R3P;;Basis (FirstGuardian);Rafael Esteves;;Imediatamente;Média;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;ZCORR0009_AGRUPAMENTOS;ZCORR0009;  R3R3P;;Basis (FirstGuardian);Rafael Esteves;;Imediatamente;Média;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;ZCORR0009_LUCRO_CUSTOS;ZCORR0009;  R3R3P;;Basis (FirstGuardian);Rafael Esteves;;Imediatamente;Média;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;bi_exporta_extrvend_mes;bi_export_mes;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;.;Imediatamente;Alta;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;BI_EXPORTA_ESTOQUE;"BI_EXP_ESTOQUE_D
+BI_EXP_ESTOQUE_S";hoapgan001fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;bi_fecha_distribui;BI_DISTRIBUI;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_carga_distribui;BI_DISTRIBUI;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_exporta_distribui;BI_DISTRIBUI;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_fecha_rebate;BI_REBATE;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_carga_rebate;BI_REBATE;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_contabil_rebate;BI_REBATE;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_exporta_rebate;BI_REBATE;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_fecha_taxa;BI_TAXA;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_carga_taxa;BI_TAXA;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_contabil_taxa;BI_TAXA;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_exporta_taxa;BI_TAXA;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;BI_SAP_RATEIO;BI_RATEIO;  R3R3P;;Basis (FirstGuardian);Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;BI_EXPORTA_RATEIO;BI_RATEIO;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;Rafael Moreira;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;SEND_XML_CHAORDIC_INCREMENTAL /  SEND_XML_CHAORDIC_FULL / SEND_XML_CHAORDIC_MASTER;FAST_PROPAGATION;hoapwcs005;;Carlos Renato Domingos da Silva;Rafael Esteves;;Horário Comercial;Média;Chama shellscripts que executam JAR's para construção e envio de XML contendo os produtos do site que serão enviados à Chaordic para indexação em Produção Staging. 
+;PERFORM_CLEARALL_CACHE;PERFORM_CLEARALL;SA1LPWCS002FST;;  ;Rafael Esteves;;Imediatamente;Alta;Executa o sh perform_clearall_cache.sh para limpeza total do cache do site.
+;VALIDACAO_DYNAMIC_AUTOMATION_BABBLE_XXXX (onde xxxx é o nome do cliente LASA / FAST SHOP / MULTIPLUS / COPER / ALPARGATAS / ELUCID);VALID_AUTOMATION;.;;;;;Horário Comercial;Baixa;"VALIDACAO_DYNAMIC_AUTOMATION_BABBLE_FAST
+VALIDACAO_DYNAMIC_AUTOMATION_BABBLE_LASA
+VALIDACAO_DYNAMIC_AUTOMATION_BABBLE_COP
+VALIDACAO_DYNAMIC_AUTOMATION_BABBLE_MULT
+VALIDACAO_DYNAMIC_AUTOMATION_BABBLE_ALP
+VALIDACAO_DYNAMIC_AUTOMATION_BABBLE_ELU"
+;bi_exporta_servicos;BI_PROJ_CONT;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;bi_relatorio_coleta;BI_PROJ_CONT;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Relatório com informações do dia anterior do Estoque Externo, criado no projeto contabilidade gerencial
+;bi_relatorio_estoque;BI_PROJ_CONT;hoapgan002fst;;Wladmir Bastos (pnarchi@br.ibm.com) ou Wladmir Bastos;Rafael Esteves;;Horário Comercial;Média;Relatório com informações do dia anterior do Estoque Externo, criado no projeto contabilidade gerencial
+;bi_exporta_tabela_qloc;BI_EXP_QLOC;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração da posição da locação das ruas de estoque para alimentar os relatórios do BI criados no projeto contabilidade gerencial
+;monitor_gc_balance;monitor_gc;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de Saldo de LC p/ Contabilidade.
+;bi_fecha_operadora;bi_operadora;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;"bi_carga_operadora
+";bi_operadora;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;bi_exporta_operadora;bi_operadora;hoapgan001fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;UPLOAD_AZCOPY_DBF;UPLOAD_AZCOPY;HOWPFFI001FST;;Wladmir Bastos;Rafael Esteves;;Horário Comercial;Baixa;execução diario do arquivo de envio ao Blob da azure
+;UPLOAD_AZCOPY_HORA;UPLOAD_AZCOPY;HOWPFFI001FST;;Wladmir Bastos;Rafael Esteves;;Notificar Via E-mail;Baixa;execução diario do arquivo de envio ao Blob da azure
+;BI_FECHA_OMNIPLACE;BI_omniplace;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;BI_CARGA_OMNIPLACE;BI_omniplace;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;BI_EXPORTA_OMNIPLACE;BI_omniplace;hoapgan002fst;;Wladmir Bastos;Rafael Esteves;;Imediatamente;Alta;Extração de informações contábeis - Projeto Contabilidade Gerencial
+;GERAR_XML_RACCOON;RACCOON;sa1lpwcs002fst;;Carlos Renato Silva;Rafael Esteves;;Notificar Via E-mail;Baixa;Este job ira gerar o xml para envio a Agencia digital Raccoon
+;SEND_XML_RACCOON;RACCOON;sa1lpwcs002fst;;Carlos Renato Silva;Rafael Esteves;;Notificar Via E-mail;Baixa;Este job enviara  o xml para envio a Agencia digital Raccoon
+;FAST_WCS_BACKUP_SOLR;"	FAST_FULL_PROPAG
+ 	FST_DELT* (com submit)";sa1lpwcs002fst;;Carlos Renato Domingos da Silva;Guilherme;Rafael Moreira;Imediatamente;Alta;copia dos dados de Propagação - Criado pelo time de Middleware (Raphael Gallo) 
+;FAST_WCS_CHECK_SOLR*;"	FAST_FULL_PROPAG
+ 	FST_DELT* (com submit)";sa1lpwcs002fst;;Carlos Renato Domingos da Silva;Guilherme;Rafael Moreira;Imediatamente;Alta;"Contagem de registros de dados de Propagação - Criado pelo time de Middleware (Raphael Gallo) 
+
+exit 0 = OK tem mais de 350000 registros
+exit != 1 => Falhou tem menos de 350000 registros"
+;FAST_MPC_RESTFUL_GET_GERACAO_ARQUIVO;MPC_BI;HOAPGAN001FST;;  ;Rafael Esteves;.;Imediatamente;Alta;Gerar arquivo de arquivo gan_elegibilidade.csv
+;FAST_TRANSFER_SEND_BI_GAN_DOWNLOAD;MPC_BI;HOAPGAN001FST;;  ;Rafael Esteves;.;Imediatamente;Alta;transferencia de arquivo do BI para o GAN
+;FAST_MPC_EXEC_MPCFILE;MPC_BI;HOAPGAN001FST;;  ;Rafael Esteves;.;Imediatamente;Alta;execucao de arquivo no GAN
+;FAST_TRANSFER_SEND_GAN_BI_UPLOAD;MPC_BI;HOAPGAN001FST;;  ;Rafael Esteves;.;Imediatamente;Alta;transferencia de arquivo do GAN para o BI
+;FAST_MPC_RESTFUL_GET_RESPOSTA_MPC_GAN;MPC_BI;HOAPGAN001FST;;  ;Rafael Esteves;.;Imediatamente;Alta;resposta da geracao do arquivo, restful
+;FAST_START_ESB_SKU_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_ESB_SKU
+;FAST_START_CLICKCOLLECT_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_CLICKCOLLECT
+;FAST_START_ESB_FORHIERARCHY_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_ESB_FORHIERARCHY
+;FAST_START_PRODUCTS_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_PRODUCTS
+;FAST_START_ESB_FORATTRIBUTE_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_ESB_FORATTRIBUTE
+;FAST_START_ESB_FOR_KITBUNDLE_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_ESB_FOR_KITBUNDLE
+;FAST_START_FOR_CLICCOLLECTEXTRACTION_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_CLICCOLLECTEXTRACTION
+;FAST_START_FOR_ALLRETRIES_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_ALLRETRIES
+;FAST_START_FOR_SKUHUB_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_SKUHUB
+;FAST_START_FOR_UNCATEGORIZED_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_UNCATEGORIZED
+;FAST_START_WCS_IMAGENS_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_WCS_IMAGENS
+;FAST_START_FOR_WCS_IMAGENSGROUPPRODUCT_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_WCS_IMAGENSGROUPPRODUCT
+;FAST_START_FOR_PRODUCTDELAYTASK_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_PRODUCTDELAYTASK
+;FAST_START_FOR_GROUPPRODUCTDELAYTASK_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_GROUPPRODUCTDELAYTASK
+;FAST_START_FOR_PUBLICATIONDEALYTASK_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_PUBLICATIONDEALYTASK
+;FAST_START_FOR_SERVICETASK_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_SERVICETASK
+;FAST_START_FOR_PRDUPDATEDELAYTASK_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_PRDUPDATEDELAYTASK
+;FAST_START_FOR_DETECT3PDUPLICATE_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_DETECT3PDUPLICATE
+;FAST_START_FOR_PRODUCTSTOBUYABLE_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_PRODUCTSTOBUYABLE
+;FAST_START_FOR_GROUPPRODUCTSTOBUYABLE_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_GROUPPRODUCTSTOBUYABLE
+;FAST_START_FOR_CATALOGPUBLISHEDEXCTRACTI_QA;FAST_JOBS_QA_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_CATALOGPUBLISHEDEXCTRACTI
+;FAST_START_FOR_BIEXCTRACTION_QA;FAST_JOBS_QA_2;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_BIEXCTRACTION
+;FAST_FILETRANSF_PAYPAL;FAST_TRAN_PAYPAL;HOAPGAN001FST_1;;MARCELO CORTEZI FAST SHOP;;;Horário Administrativo; BAIXA;Pode reprocessar o JOB depois de uma hora, deixando o Marcelo ciente. Criticidade
+;FAST_FILETRANSF_CASHBACK;FAST_TRAN_CASHBC;HOAPGAN001FST;;MARCELO CORTEZI FAST SHOP;;;Horário Administrativo;BAIXA;Pode reprocessar o JOB depois de uma hora, deixando o Marcelo ciente. Criticidade 
+;TRUNCATE_CACHEIVL_LIVE;TRUNCATE_CACHELV;SA1LPWCS013FST_1;;Time de DBA DB2 da Kyndlyl;;;Qualquer Horário;ALTA;Truncate na tabela CACHEIVL
+;FAST_FILETRANSFER_WCS;FAST_COUNT_LIVE;HOAPGAN001FST_1;;JOSÉ NERI C&C;;;Qualquer Horário;ALTA;Transfere o arquivo contendo quantas linhas tem na CACHEIVL para o GAN e no GAN monitoramos pelo Zabbix.
+;FAST_COUNT_CACHEIVL_LIVE;FAST_COUNT_LIVE;SA1LPWCS013FST_1;;JOSÉ NERI C&C;;;Qualquer Horário;ALTA;Executa um script que conta quantas linhas tem na tabela CACHEIVL. (Necessário validar se realmente a tabela está travada ou estourada.
+;FAST_FILETRANSFER_ZURICH;FAST_TRAN_ZURICH;HOAPGAN001FST_1;;Wladmir Bastos IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;MEDIA;Pode reprocessar o JOB depois de uma hora.
+;FAST_FILETRANSF_ZURICH_ENV;FAST_TRAN_ZURICH;HOAPGAN001FST_1;;Wladmir Bastos IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;MEDIA;Pode reprocessar o JOB depois de uma hora.
+;FAST_FILETRANSFER_ZURICH_QUEBRA;FAST_TRAN_ZURICH;HOAPGAN001FST_1;;Wladmir Bastos IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;Pode reprocessar o JOB depois de uma hora.
+;FAST_FILETRANSFER_ZURICH_SEG_QUEBRA;FAST_TRAN_ZURICH;HOAPGAN001FST_1;;Wladmir Bastos IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;Pode reprocessar o JOB depois de uma hora.
+;FAST_GETNET_TRANSFERENCIA;FAST_FTP_GETNET;HOAPGAN001FST;;Wladmir Bastos IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;Pode reprocessar o JOB depois de uma hora.
+;FAST_GETNET_MOVE;FAST_FTP_GETNET;HOAPGAN001FST;;Wladmir Bastos IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;Pode reprocessar o JOB depois de uma hora.
+;FAST_MV_DMC_PROCESS;FAST_DMC_PROCESS;HOAPECC001FST;;Wladmir Bastos IBM-GBS;;;Horário Administrativo;BAIXA;Executa um comando find e depois um mv de diretórios.
+;FAST_RM_DMC_PROCESS;FAST_DMC_PROCESS;HOAPECC001FST;;Wladmir Bastos IBM-GBS;;;Horário Administrativo;BAIXA;Executa um comando find e depois um rm no diretório.
+;FAST_VERIFICA_ARQUIVO_DBF;"
+FAST_VERIFICADBF";HOAPGAN001FST;;Wladmir Bastos IBM-GBS;;;Qualquer Horário;ALTA;Verifica se existe um arquivo tmpvm.ok no diretório do GAN.
+;FAST_START_ESB_SKU;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_ESB_SKU
+;FAST_START_CLICKCOLLECT;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_CLICKCOLLECT
+;FAST_START_ESB_FORHIERARCHY;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_ESB_FORHIERARCHY
+;FAST_START_PRODUCTS;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_PRODUCTS
+;FAST_START_ESB_FORATTRIBUTE;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_ESB_FORATTRIBUTE
+;FAST_START_ESB_FOR_KITBUNDLE;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_ESB_FOR_KITBUNDLE
+;FAST_START_FOR_CLICCOLLECTEXTRACTION;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_CLICCOLLECTEXTRACTION
+;FAST_START_FOR_ALLRETRIES;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_ALLRETRIES
+;FAST_START_FOR_SKUHUB;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_SKUHUB
+;FAST_START_FOR_UNCATEGORIZED;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_UNCATEGORIZED
+;FAST_START_WCS_IMAGENS;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_WCS_IMAGENS
+;FAST_START_FOR_WCS_IMAGENSGROUPPRODUCT;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_WCS_IMAGENSGROUPPRODUCT
+;FAST_START_FOR_PRODUCTDELAYTASK;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_PRODUCTDELAYTASK
+;FAST_START_FOR_GROUPPRODUCTDELAYTASK;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_GROUPPRODUCTDELAYTASK
+;FAST_START_FOR_PUBLICATIONDEALYTASK;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_PUBLICATIONDEALYTASK
+;FAST_START_FOR_SERVICETASK;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_SERVICETASK
+;FAST_START_FOR_PRDUPDATEDELAYTASK;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_PRDUPDATEDELAYTASK
+;FAST_START_FOR_DETECT3PDUPLICATE;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_DETECT3PDUPLICATE
+;FAST_START_FOR_PRODUCTSTOBUYABLE;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_PRODUCTSTOBUYABLE
+;FAST_START_FOR_GROUPPRODUCTSTOBUYABLE;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_GROUPPRODUCTSTOBUYABLE
+;FAST_START_FOR_CATALOGPUBLISHEDEXCTRACTI;FAST_JOBS_PRD_1;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_CATALOGPUBLISHEDEXCTRACTI
+;FAST_START_FOR_BIEXCTRACTION;FAST_JOBS_PRD_2;HOAPMSF003FST;;GABRIEL MORO IBM-GBS;Rafael Esteves;Rafael Moreira;Horário Administrativo;BAIXA;FAST_START_FOR_BIEXCTRACTION
